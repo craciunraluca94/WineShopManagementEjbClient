@@ -40,4 +40,10 @@ public class ChangePasswordDTO {
 	public void setNewPassword(String newPassword) {
 		this.newPassword = newPassword;
 	}
+
+	@Override
+	public String toString() {
+		return "ChangePasswordDTO [username=" + username + ", oldPassword=" + oldPassword + ", newPassword="
+				+ newPassword + "]";
+	}	
 }
