@@ -16,6 +16,16 @@ public class PlatformUserDTO implements Serializable {
 
 	private String email;
 
+	private String dtype;
+
+	public String getDtype() {
+		return dtype;
+	}
+
+	public void setDtype(String dtype) {
+		this.dtype = dtype;
+	}
+
 	public PlatformUserDTO() {
 	}
 
@@ -69,7 +79,7 @@ public class PlatformUserDTO implements Serializable {
 
 	@Override
 	public String toString() {
-		return "PlatformUserDTO [username=" + username + ", password=" + password + ", address=" + address + ", email="
-				+ email + "]";
+		return "PlatformUserDTO [id=" + id + ", username=" + username + ", password=" + password + ", address="
+				+ address + ", email=" + email + " ]";
 	}
 }
